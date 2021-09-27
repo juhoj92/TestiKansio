@@ -1,8 +1,8 @@
 //  Ohjelma kysyy montako lukua luetaan ja laskee postiviisten lukujen kokonaissumman
-//  ja niiden keskiarvon. Negatiivisista luvuista annetaan virheilmoitus.
+//  ja niiden keskiarvon. Negatiivisista luvuista annetaan virheilmoitus ja pyydetään uusi numero.
 //  MontakoLukua
 //
-//  Created by Juho Junnila on 26.9.2021.
+//  Created by Juho Junnila on 27.9.2021.
 //
 
 #include <iostream>
@@ -23,15 +23,15 @@ int main()
         cin >> luku;
         
        if (luku < 0)
-       cout << "\nVIRHE, SYÃ–TÃ„ VAIN POSITIIVISIA NUMEROITA\n";
+       {  cout << "\nVIRHE, SYÖTÄ VAIN POSITIIVISIA NUMEROITA. ANNA UUSI NUMERO: \n";}
+        
     
     
-    
-       else if (luku > 0)
+    if (luku > 0)
                     
-        summa = summa + luku;
+    {summa = summa + luku;
         laskuri = laskuri + 1;
-        keskiarvo = summa / lkm;
+        keskiarvo = summa / lkm;}
     }
     
     cout << "\nLukujen summa on: \n" << summa;
