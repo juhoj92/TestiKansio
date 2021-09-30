@@ -1,0 +1,39 @@
+//  Ohjelma kysyy kaksi lukua ja laskee lukujen keskiarvon. Ohjelmassa kaksi
+//  aliohjelmaa: toinen kysyy
+//  syöttätietoja (luetiedot) ja toinen laskee keskiarvon (keskiarvo). Ohjelma
+//  tulostaa keskiarvon.
+//  main.cpp
+//  KouluHommia
+//
+//  Created by Juho Junnila on 29.9.2021.
+//
+
+
+#include <iostream>
+
+using namespace std;
+
+int luetiedot (int luku1 =0, int luku2 =0) {
+    cout << "Anna luku1: "; cin >> luku1;
+    cout << "Anna luku2: "; cin >> luku2;
+    return 0;
+}
+
+//int keskiarvo (luku1, luku2) {
+                                                    //Miten toisen funktion saa
+  // keskiarvo = (luku1 + luku2) / 2;                  //ymmärtämään ensimmäisen
+    //return 0;                                        // parametrejä???
+  //}
+
+int main()
+{
+
+int luku1, luku2;
+
+    
+    luetiedot ();
+    
+    
+    
+    
+}
